@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-paper-grey: var(--paper-grey);
+  --color-black: var(--black);
+  --color-ink: var(--ink);
+  --color-red: var(--red);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted);
+  --color-hairline: var(--hairline);
+
+  --color-card: var(--paper);
+  --color-card-foreground: var(--ink);
+  --color-primary: var(--ink);
+  --color-primary-foreground: var(--paper);
+  --color-secondary: var(--paper-grey);
+  --color-secondary-foreground: var(--ink);
+  --color-accent: var(--red);
+  --color-accent-foreground: var(--paper);
+  --color-border: var(--hairline);
+  --color-input: var(--hairline);
+  --color-ring: var(--red);
+  --color-destructive: var(--red);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --paper-grey: #f1efeb;
+  --black: #0c0b0e;
+  --ink: #16131a;
+  --red: #e1241b;
+  --muted: #8c887f;
+  --hairline: #e4e0d9;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --radius: 1.25rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+  html {
+    font-family: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--red);
+    color: var(--paper);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Display heading utility */
+.display {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+/* Hide scrollbars on marquees */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
