@@ -61,7 +61,7 @@ export function Hero() {
         className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between border-b border-hairline pb-5 text-[0.7rem] font-bold uppercase tracking-[0.18em] text-muted sm:text-xs"
       >
         <span>Established 2026 · Calgary, AB</span>
-        <span className="text-ink">Tips off June 2026</span>
+        <span className="text-ink">Tips off Fall 2026</span>
       </motion.div>
 
       {/* Headline */}
