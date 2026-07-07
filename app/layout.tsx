@@ -12,7 +12,7 @@ const hankenGrotesk = Hanken_Grotesk({
 export const metadata: Metadata = {
   title: 'Calgary Club Premier League (CCPL) | CMBA',
   description:
-    'Calgary Club Premier is a premier tournament league where club teams play CMBA teams. Stop-time games. Certified refs. Built in our own city. Registration opens June 2026.',
+    'Calgary Club Premier is a premier tournament league where club teams play CMBA teams. Stop-time games. Certified refs. Built in our own city. Registration is now open.',
   generator: 'v0.app',
   openGraph: {
     title: 'Calgary Club Premier League (CCPL)',

@@ -23,8 +23,8 @@ export function CTA() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mx-auto mt-8 max-w-xl text-pretty text-lg leading-relaxed text-paper/90 sm:text-xl">
-            Registration opens June 2026. Get on the list and we'll tell you the
-            second the floor opens.
+            Registration is open. Claim your team&apos;s spot and we&apos;ll see
+            you on the floor this season.
           </p>
         </Reveal>
         <Reveal delay={0.18}>
