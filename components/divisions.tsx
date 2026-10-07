@@ -13,7 +13,7 @@ export function Divisions() {
         <Reveal>
           <Kicker>Two divisions, one standard</Kicker>
           <h2 className="mt-6 max-w-3xl text-balance text-4xl font-extrabold tracking-tight text-ink sm:text-5xl md:text-6xl">
-            Pick your bracket. Bring your best.
+            Pick your division. Bring your best.
           </h2>
         </Reveal>
 
@@ -23,7 +23,7 @@ export function Divisions() {
             align="left"
             tagline="U15 Premier"
             title="U15 Premier"
-            description="For U15 club and rep teams ready to push past league play."
+            description="For U15 club and rep teams ready to push past league play. Round-robin play every weekend."
             marqueeText="STOP-TIME ·"
             marqueeTone="red"
             priceLabel={REGISTRATION.priceLabel}
@@ -38,7 +38,7 @@ export function Divisions() {
             align="right"
             tagline="High School Premier"
             title="High School Premier"
-            description="Open to every Calgary high school program team. Bonus skills programming."
+            description="Open to every Calgary high school program team. Round-robin play every weekend."
             marqueeText="GAME ON /"
             marqueeTone="black"
             priceLabel={REGISTRATION.priceLabel}

@@ -17,19 +17,19 @@ const U15: Row[] = [
     weekend: 'Weekend 1',
     dates: { text: 'Oct 9 / 10', reds: ['9', '10'] },
     span: 'Two days',
-    detail: 'Round-robin + bracket',
+    detail: 'Round robin',
   },
   {
     weekend: 'Weekend 2',
     dates: { text: 'Oct 23 / 24', reds: ['23', '24'] },
     span: 'Two days',
-    detail: 'Round-robin + bracket',
+    detail: 'Round robin',
   },
   {
     weekend: 'Weekend 3',
     dates: { text: 'Nov 6 / 7', reds: ['6', '7'] },
     span: 'Two days',
-    detail: 'Playoffs + finals',
+    detail: 'Round robin',
   },
 ]
 
@@ -38,19 +38,19 @@ const HS: Row[] = [
     weekend: 'Weekend 1',
     dates: { text: 'Oct 2 to 4', reds: ['2', '4'] },
     span: 'Three days',
-    detail: '+ Sunday skills',
+    detail: 'Round robin',
   },
   {
     weekend: 'Weekend 2',
     dates: { text: 'Oct 16 to 18', reds: ['16', '18'] },
     span: 'Three days',
-    detail: '+ Sunday skills',
+    detail: 'Round robin',
   },
   {
     weekend: 'Weekend 3',
     dates: { text: 'Oct 30 to Nov 1', reds: ['30', '1'] },
     span: 'Three days',
-    detail: 'Playoffs + finals',
+    detail: 'Round robin',
   },
 ]
 
@@ -106,6 +106,7 @@ export function Calendar() {
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-lg text-muted">
             Three tournament weekends per division, October to November 2026.
+            Every tournament is round-robin play for all age groups.
           </p>
           <p className="mt-4 inline-flex items-baseline gap-2 text-base font-bold uppercase tracking-[0.12em] text-ink">
             <span className="text-2xl font-extrabold tracking-tight text-red">
